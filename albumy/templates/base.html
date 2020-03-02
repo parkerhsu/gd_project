@@ -91,19 +91,16 @@
             </div>
         {% endfor %}
         {% block content %}{% endblock %}
-        {% block footer %}
-
-        {% endblock %}
     </div>
 </main>
 <div id="toast"></div>
-<footer style="margin-top: 200px;">
-    <p class="float-left">
+<div class="footer-wrap">
+    <div class="footer">
         <small>
-            &copy; 2020 毕业设计
+            &copy; 2020 毕业设计 - xhz
         </small>
-    </p>
-</footer>
+    </div>
+</div>
 
 {% block scripts %}
     <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
